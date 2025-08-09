@@ -232,7 +232,6 @@ main{
 .contacts a:hover,h2:hover{
     color: orangered;
 }
-
 .footer{
     background-color: rgb(245, 240, 234);
     justify-content: center;
@@ -258,8 +257,9 @@ main{
     display: flex;
     justify-content: space-between;
 }
-
-
+.phone-social{
+    display: none;
+}
 /* Let Creat Responsive website*/
 
 /* For Laptop Device */
@@ -430,6 +430,20 @@ main{
         max-height: 7rem;
         max-width: 20rem;
         min-width: 20rem;
+    }
+    .email{
+        font-size: 1rem;
+    }
+    .phone-social{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.2rem;
+        background-color:rgb(245, 240, 234);
+        height: 5rem;
+    }
+    .phone-social .social{
+        display: flex;
     }
 }
 @media (min-width : 50px) and (max-width : 360px){

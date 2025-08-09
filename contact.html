@@ -63,9 +63,15 @@
                     <h2>Contact me! </h2>
                     <span>Phone : <a href="tel:+93711717893">+93711717893</a></span>
                     <span>Whatsapp : <a href="https://wa.me/message/XZKAIKYDWJE7L1" target="_blank">+93711717893</a></span>
-                    <span>Email : <a href="mailto:munirrahmanrahmani0@gmail.com">munirrahmanrahmani0@gmail.com</a></span>
+                    <span class="email">Email<a href="mailto:munirrahmanrahmani0@gmail.com">:munirrahmanrahmani0@gmail.com</a></span>
                 </div>
             </section>
+            <div class="social-media phone-social">
+                <div class="twitter social"><a href="https://x.com/EngMunirRahman?s=09"><i class="fa-brands fa-x-twitter"></i></a></div>
+                <div class="facebook social"><a href="https://www.linkedin.com/in/munir-rahman-rahmani-9a9149350/"><i class="fa-brands fa-linkedin"></i></a></div>
+                <div class="instagram social"><a href="https://wa.me/message/XZKAIKYDWJE7L1"><i class="fa-brands fa-whatsapp"></i></a></div>
+                <div class="youtube social"><a href="https://github.com/Munir-Rahman"></a><i class="fa-brands fa-github"></i></div>
+            </div>
     </main>
 
     <div class="footer">
@@ -84,8 +90,10 @@
         let name = document.getElementById("name");
         let email = document.getElementById("email");
         let message = document.getElementById("message");
-        let link = `https://wa.me/93711717893?text="Name : ${name}\nEmail : ${email}\nMessage : ${message}"`;
-        window.open(link, "_blank");
+        if(name.value !== "" && email.value !== "" && message.value !== ""){
+            let link = `https://wa.me/93711717893?text="Name : ${name.value}\nEmail : ${email.value}\nMessage : ${message.value}"`;
+            window.open(link, "_blank");
+        }
     });
     </script>
 </body>
