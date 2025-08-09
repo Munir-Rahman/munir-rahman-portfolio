@@ -1,0 +1,477 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: arial;
+    background-color: rgb(245, 240, 234);
+}
+body{
+    height: 100vh;
+    font-size: 1.4rem;
+    padding: 1rem 5rem;
+}
+header{
+    background-color: aliceblue;
+    height: 80px;
+    align-content: center;
+    position: sticky;
+    top: 0;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 2px 1px gray;
+    z-index: 100;
+}
+header nav{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav .nav-name{
+    font-weight: bolder;
+    transition: .5s ease;
+}
+nav .nav-name:hover{
+    color: orangered;
+    transform: scale(1.1);
+}
+nav .menu{
+    display: flex;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+nav a{
+    position: relative;
+    padding-bottom: 5px;
+}
+nav a,a:visited,
+a:any-link,
+a:target{
+    text-decoration: none;
+    color: #001;
+    font-weight: light;
+    z-index: 1;
+    transition: .3s ease;
+    font-weight: 550;
+}
+nav .social-media{
+    display: flex;
+    justify-content: space-around;
+}
+.social{
+    padding: 0px 3px;
+}
+.fa-linkedin,
+.fa-github,
+.fa-whatsapp,
+.fa-x-twitter{
+    height: 2rem;
+    width: 2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+.fa-linkedin:hover{
+    color: #fff;
+    background-color: rgb(14, 14, 160);
+    transform: scale(1.1);
+}
+.fa-whatsapp:hover{
+    transform: scale(1.1);
+    color: #fff;
+    background-color: green;
+}
+.fa-x-twitter:hover{
+    color: #fff;
+    background-color: #000;
+    transform: scale(1.1);
+}
+.fa-github:hover{
+    color: #fff;
+    background-color: #000;
+    transform: scale(1.1);
+}
+.menu .menu-project{
+    color: #000;
+}
+.menu .link:hover{
+    color: #fff;
+}
+.menu{
+    position: relative;
+}
+.menu .animation{
+    position: absolute;
+    top: 0;
+    left: 242px;
+    width: 80px;
+    height: 80%;
+    background: orangered;
+    border-radius: 3px;
+    transition: .5s ease;
+}
+.menu a:nth-child(4)~span{
+    left: 242px;
+    width: 80px;
+}
+.menu a:nth-child(1):hover~span{
+    left: -2px;
+    width: 60px;
+}
+.menu a:nth-child(2):hover~span{
+    left: 70px;
+    width: 65px;
+}
+.menu a:nth-child(3):hover~span{
+    left: 142px;
+    width: 85px;
+}
+.menu a:nth-child(4):hover~span{
+    left: 242px;
+    width: 80px;
+}
+main{
+    margin-top: 0.6rem;
+    padding: 7rem 5rem;
+    background-color: aliceblue;
+}
+.contact-form{
+    padding: 4.5rem;
+    background-color: rgb(245, 240, 234);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 8rem;
+}
+.text-part{
+    padding: 1rem;
+}
+.message-icon img{
+    height: 5rem;
+    width: 6rem;
+}
+.text-part h2{
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 2.4rem;
+    padding-top: 1.5rem;
+}
+.message-text{
+    padding-top: 1rem;
+}
+.message-text span{
+    font-size: 1.2rem;
+}
+.form-part{
+    display: flex;
+}
+.form-part input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    color: black;
+}
+.first-input{
+    display: flex;
+    padding-bottom: 1rem;
+    column-gap: 1rem;
+    padding-top: 1rem;
+}
+.form-part textarea{
+    min-height: 7rem;
+    max-height: 7rem;
+    max-width: 30rem;
+    min-width: 30rem;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    font-family: inherit;
+    font-size: 1rem;
+    color: black;
+}
+.button-out{
+    padding-top: 1rem;
+    display: flex;
+    width: 9rem;
+    height: 4rem;
+}
+.button-out button{
+    height: 100%;
+    width: 100%;
+    border-radius: 30px;
+    border: 2px solid orangered;
+    color: orangered;
+    font-weight: bolder;
+    font-size: 0.9rem;
+    transition: .5s ease;
+}
+.button-out button:hover{
+    color: #fff;
+    background-color: orangered;
+    transform: scale(1.1);
+}
+.contact-details{
+    margin-top: 1rem;
+    padding: 3rem;
+    background-color: rgb(245, 240, 234);
+    display: flex;
+    justify-content: left;
+    align-items:start;
+}
+.contacts span{
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    display: flex;
+}
+.contacts a:hover,h2:hover{
+    color: orangered;
+}
+
+.footer{
+    background-color: rgb(245, 240, 234);
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    display: flex;
+    position: relative;
+    bottom: 0%;
+}
+.footer .footer-text{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    column-gap: 23rem;
+    position: relative;
+    bottom: 0%;
+}
+.footer .between-text{
+    font-size: 1rem;
+}
+.footer .last-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* Let Creat Responsive website*/
+
+/* For Laptop Device */
+@media (min-width : 1200px) and (max-width : 1440px) {
+    nav {
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .details{
+        line-height: 3rem;
+        font-size: 1.6rem;
+    }
+} 
+
+/* For IPAD Device*/
+@media (min-width : 992px) and (max-width: 1200px){
+    header{
+        height: 80px;
+    }
+    .social{
+    padding-left: 15px;
+    }
+    main{
+        justify-content: center;
+        place-content: center;
+    }
+    main .contact-form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .menu .animation{
+    position: absolute;
+    top: 0;
+    left: 242px;
+    width: 80px;
+    height: 80%;
+    background: orangered;
+    border-radius: 3px;
+    transition: .5s ease;
+    }
+}
+
+/* Mobile L */
+@media (min-width : 860px) and (max-width : 992px){
+    header{
+        height: 70px;
+    }
+    main{
+        padding: 1rem;
+        justify-content: center;
+        place-content: center;
+    }
+    main .contact-form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .menu .animation{
+        position: absolute;
+        top: 0;
+        left: 242px;
+        width: 80px;
+        height: 75%;
+        background: orangered;
+        border-radius: 3px;
+        transition: .5s ease;
+    }
+}
+
+/* Mobile M */
+@media (min-width : 700px) and (max-width : 860px){
+    .nav-name{
+        display: none;
+    }
+    header{
+        height: 70px;
+        background-color: aliceblue;
+    }
+    main{
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+        place-content: center;
+    }
+    main .contact-form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+
+/* Mobile */
+@media (min-width : 550px) and (max-width : 700px){
+    .nav-name{
+        display: none;
+    }
+    header{
+        height: 70px;
+        background-color: aliceblue;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .social-media .social{
+        display: none;
+    }
+    body{
+        padding: 1rem;
+    }
+    main{
+        padding: 1rem;
+        justify-content: center;
+        align-items: center;
+        place-content: center;
+    }
+    main .contact-form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+}
+@media (min-width : 360px) and (max-width : 550px){
+    .nav-name{
+        display: none;
+    }
+    header{
+        height: 70px;
+        background-color: aliceblue;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .social-media .social{
+        display: none;
+    }
+    body{
+        padding: 0rem;
+    }
+    main{
+        padding: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        place-content: center;
+    }
+    main .contact-form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }   
+    .form-part textarea{
+        min-height: 7rem;
+        max-height: 7rem;
+        max-width: 20rem;
+        min-width: 20rem;
+    }
+}
+@media (min-width : 50px) and (max-width : 360px){
+    .nav-name{
+        display: none;
+    }
+    header{
+        height: 70px;
+        background-color: aliceblue;
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .social-media .social{
+        display: none;
+    }
+    body{
+        padding: 0rem;
+    }
+    main{
+        padding: 0.5rem;
+        justify-content: center;
+        align-items: center;
+        place-content: center;
+    }
+    main .contact-form{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+    .first-input{
+        display: flex;
+        width: 90%;
+    }
+    .form-part textarea{
+        min-height: 7rem;
+        max-height: 7rem;
+        max-width: 10rem;
+        min-width: 10rem;
+    }
+}

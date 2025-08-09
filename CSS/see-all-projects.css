@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+header{
+    background-color: aliceblue;
+    height: 80px;
+    align-content: center;
+    position: sticky;
+    top: 0;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 2px 1px gray;
+}
+header nav{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav .nav-name{
+    font-weight: bolder;
+}
+nav .nav-name:hover{
+    color: orangered;
+}
+nav a,a:visited,
+a:any-link,a:active,
+a:target{
+    text-decoration: none;
+    color: #001;
+    font-weight: lighter;
+}
+nav .social-media{
+    display: flex;
+    justify-content: space-around;
+}
+.social{
+    padding: 0px 3px;
+}
+.fa-linkedin,
+.fa-github,
+.fa-whatsapp,
+.fa-x-twitter{
+    height: 2rem;
+    width: 2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+.fa-linkedin:hover{
+    color: #fff;
+    background-color: rgb(8, 8, 118);
+    transform: scale(1.1);
+}
+.fa-whatsapp:hover{
+    transform: scale(1.1);
+    color: #fff;
+    background-color: green;
+}
+.fa-x-twitter:hover{
+    color: #fff;
+    background-color: #000;
+    transform: scale(1.1);
+}
+.fa-github:hover{
+    color: #fff;
+    background-color: #000;
+    transform: scale(1.1);
+}
+.menu .contact{
+    color: orangered;
+}
+.menu .link:hover{
+    color: orangered;
+}
+main{
+    background-color: aliceblue;
+    margin-top: 0.6rem;
+    padding: 2rem 1rem;
+}
+table{
+    display: table;
+    place-content: center;
+    gap: 0.3rem;
+    width: 100%;
+    text-align: center;
+}
+thead th{
+    background-color: #091735;
+    color: #fff;
+}
+tbody tr{
+    background-color: #838487;
+    background-color: #00abd5;
+}
+table,thead,
+tbody,tr,td,th{
+    border: 3px solid #5e5757;
+    border-collapse: collapse;
+    font-size: 2rem;
+    font-weight: 600;
+}
+th,td{
+    height: 3rem;
+}
+td a:any-link,
+td a:checked{
+    color: #091735;
+    font-weight: 600;
+}
+td a:hover{
+    color: blue;
+    text-decoration: underline;
+}
+td:nth-child(2){
+    font-size: 1.5rem;
+}
+.button-outer{
+    width: 100%;
+    text-align: center;
+}
+button{
+    height: 2.7rem;
+    width: 7.5rem;
+    border-radius: 0.7rem;
+    margin-top: 1rem;
+    border: none;
+    outline: none;
+    border: 2px solid #091735;
+    text-align: center;
+    transition: .4s ease;
+}
+button a{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: transparent;
+}
+button:hover{
+    transform: scale(1.1);
+    background-color: #091735;
+}
+
+@media (max-width : 625px){
+    .menu{
+        display: none;
+    }
+    td,th{
+        font-size: 1rem;
+    }
+    td:nth-child(2),
+    th:nth-child(2){
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,799 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(245, 240, 234);
+}
+body{
+    height: 100vh;
+    font-size: 1.4rem;
+    padding: 1rem 5rem;
+}
+header{
+    background-color: aliceblue;
+    height: 80px;
+    align-content: center;
+    position: sticky;
+    top: 0;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 2px 1px gray;
+    z-index: 100;
+}
+header nav{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+    border-radius: 1rem;
+}
+nav .nav-name{
+    font-weight: bolder;
+    transition: .5s ease;
+}
+nav .nav-name:hover{
+    color: orangered;
+    transform: scale(1.08);
+}
+nav .menu{
+    display: flex;
+    gap: 20px;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav a{
+    position: relative;
+    padding-bottom: 5px;
+    color: #fff;
+    font-weight: 550;
+}
+nav a,a:visited,
+a:any-link,
+a:target{
+    text-decoration: none;
+    color: #001;
+    font-weight: light;
+    z-index: 1;
+    transition: .3s ease;
+}
+nav .social-media{
+    display: flex;
+    justify-content: space-around;
+}
+.social{
+    padding: 0px 3px;
+}
+.fa-linkedin,
+.fa-github,
+.fa-whatsapp,
+.fa-x-twitter{
+    height: 2rem;
+    width: 2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+.fa-linkedin:hover{
+    color: #fff;
+    background-color: rgb(17, 17, 151);
+    transform: scale(1.1);
+}
+.fa-whatsapp:hover{
+    transform: scale(1.1);
+    color: #fff;
+    background-color: green;
+}
+.fa-x-twitter:hover{
+    color: #fff;
+    background-color: #000;
+    transform: scale(1.1);
+}
+.fa-github:hover{
+    color: #fff;
+    background-color: #000;
+    transform: scale(1.1);
+}   
+.menu .home{
+    color: #000;
+}
+.menu .link:hover{
+    color: #fff;
+}
+.menu{
+    position: relative;
+}
+.menu .animation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 57px;
+    height: 100%;
+    background: orangered;
+    border-radius: 3px;
+    transition: .5s ease;
+}
+.menu a:nth-child(1)~span{
+    left: 0px;
+}
+.menu a:nth-child(1):hover~span{
+    left: 0px;
+}
+.menu a:nth-child(2):hover~span{
+    left: 70px;
+    width: 65px;
+}
+.menu a:nth-child(3):hover~span{
+    left: 145px;
+    width: 83px;
+}
+.menu a:nth-child(4):hover~span{
+    left: 242px;
+    width: 78px;
+}
+main{
+    background-color: aliceblue;
+    padding-top: 5rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+main section{
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 1rem 2rem 1rem 1rem;
+    column-gap: 10%;
+}
+.my-details{
+    padding-top: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 1rem;
+}
+.my-details .name-div{
+    display: flex;
+}
+.my-details .inner-name{
+    color: rgb(3, 147, 3);
+}
+.my-details .wrap{
+    display: flex;
+    color: rgb(3, 147, 3);
+    justify-content: center;
+    align-items: center;
+}
+.profession{
+    width: auto;
+    display: flex;
+    font-size: 2.1rem;
+    font-weight: 550;
+}
+.profession span::before{
+    content: 'Fron-End Developer';
+    animation: words 10s infinite;
+    display: flex;
+    flex-wrap: nowrap;
+    text-wrap: nowrap;
+}
+.profession span::after{
+    position: relative;
+    content: '';
+    border-left: 3px solid #fff;
+    width: calc(100% + 8px);
+    height: 100%;
+    animation: cursor 0.4s infinite;
+}
+@keyframes cursor{
+    to{
+        border-left: 3px solid rgb(3, 147, 3);
+    }
+}
+@keyframes words{
+    0%,25%{
+        content: "Front-End Developer";
+    }
+    26%,50%{
+        content: "Freelancer";
+    }
+    51%,75%{
+        content: "Programmer";
+    }
+    76%,100%{
+        content: "Educator";
+    }
+}
+.details{
+    line-height: 2.5rem;
+}
+.buttons{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1rem;
+}
+.first-button, .second-button{
+    height: 40px;
+    width: 140px;
+    border: 1px solid orangered;
+    border-radius: 20px;
+    transition: .5s ease;
+}
+.first-button:hover, .second-button:hover{
+    background-color: orangered;
+    transform: scale(1.08);
+}
+.my-projects, .contact{
+    font-size: 0.9rem;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: none;
+    font-weight: bold;
+    color: orangered;
+    background-color: transparent;
+}
+.my-projects:hover, .contact:hover{
+    background-color: orangered;
+    color: #fff;
+}
+figure{
+    margin-top: -1.5rem;
+    padding-left: 3.5rem;
+}
+figure img{
+    border: 4px solid rgb(3, 147, 3);
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+}
+.image{
+    background-image: url("../Images/My-Image.jpg");
+}
+.second-menu a{
+    display: none;
+}
+/* @keyframes apper{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+figure,section,nav{
+    animation: apper 2s linear;
+} */
+/* Let Creat Responsive website*/
+
+/* For Laptop L Device */
+@media (min-width : 1440px){
+    figure img{
+    height: 600px;
+    width: 600px;
+    }
+    .second-menu{
+    display: none;
+    }
+}
+
+/* For Laptop Device */
+@media (min-width : 1200px) {
+    .second-menu{
+    display: none;
+    }
+    main section{
+        display: flex;
+        flex-flow: row nowrap;
+        padding: 1rem 5rem 1rem -10rem;
+        column-gap: 7%;
+    }
+    nav {
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    figure{
+        margin-top: -2.5rem;
+        padding-left: 4rem;
+    }
+    figure img{
+    height: 500px;
+    width: 500px;
+    }
+    .details{
+    line-height: 3rem;
+    font-size: 1.6rem;
+    }
+    .profession span::after{
+    position: relative;
+    content: '.';
+    /* padding-top: 1rem; */
+    }
+} 
+
+/* For IPAD Device*/
+@media (min-width : 992px) and (max-width: 1200px){
+    .second-menu{
+    display: none;
+    }
+    header{
+        height: 80px;
+    }
+    nav .menu-link{
+    padding-top: 0.2rem;
+    padding-right: 15px;
+    }
+    nav .menu-contact{
+    padding-top: 0.15rem;
+    padding-right: 5px;
+    }
+    .social{
+    padding-left: 15px;
+    }
+    main{
+        justify-content: center;
+        place-content: center;
+    }
+    main section{
+        display: flex;
+        flex-flow: column wrap;
+        padding: -1rem 5rem 1rem 3rem; 
+        justify-content: center;
+        align-items: center;
+    }
+    figure{
+        margin-top: -4.5rem;
+        margin-left: -2.4rem;
+    }
+    figure img{
+    height: 500px;
+    width: 500px;
+    }
+    .my-details{
+    justify-content: center;
+    align-items: center;
+    padding-left: 2rem;
+    row-gap: 1rem;
+    }
+    .profession{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .profession .inner-name{
+        font-size: 2.5rem;
+    }
+    .profession span::after{
+    position: relative;
+    content: '.';
+    }
+    .details{
+    line-height: 3rem;
+    font-size: 1.6rem;
+    text-align: center;
+    }
+    .buttons{
+        padding-bottom: 1rem;
+    }
+}
+
+/* Mobile L */
+@media (min-width : 768px) and (max-width : 992px){
+    .second-menu{
+        display: none;
+    }
+    nav .menu-link{
+        padding-right: 10px;
+    }
+    main{
+        width: 100%;
+        height: 100%;
+    }
+    header{
+        height: 70px;
+    }
+    body{
+        padding: 0px 2rem;
+    }
+    main{
+        margin-top: 2rem;
+        padding-top: 1rem;
+        display: flex;
+        justify-content: center;
+        place-content: center;
+    }
+    main section{
+        display: flex;
+        flex-flow: column wrap;
+        padding: 0px 4rem;
+        align-items: center;
+        justify-content: center;
+    }
+    figure{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 450px;
+        width: 450px;
+        padding: 0;
+    }
+    figure img{
+        height: 450px;
+        width: 450px;
+    }
+    .my-details .details{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .details{
+        text-align: center;
+        line-height: 3rem;
+        font-size: 1.6rem;
+    }
+    .name-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .name-div h2{
+        font-size: 2.5rem;
+    }
+    .profession{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .profession span::before{
+        padding-top: 1rem;
+    }   
+    .profession span::after{
+        content: '.';
+        padding-top: 1rem;
+    }
+    .my-details .buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Mobile M */
+@media (min-width : 576px) and (max-width : 768px){
+    .social-media .social{
+        display: none;
+    }
+    .second-menu{
+        display: none;
+    }
+    .nav-name{
+        display: none;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    nav .menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5.5rem;
+    }
+    .menu .animation{
+        position: absolute;
+        top: 0;
+        left: -3px;
+        width: 60px;
+        height: 100%;
+        background: orangered;
+        border-radius: 3px;
+        transition: .5s ease;
+    }
+    .menu a:nth-child(1)~span{
+        left: -3px;
+    }
+    .menu a:nth-child(1):hover~span{
+        left: -3px;
+    }
+    .menu a:nth-child(2):hover~span{
+        left: 136px;
+        width: 65px;
+    }
+    .menu a:nth-child(3):hover~span{
+        left: 280px;
+        width: 83px;
+    }
+    .menu a:nth-child(4):hover~span{
+        left: 446px;
+        width: 78px;
+    }
+    body{
+        padding: 0rem 0rem;
+    }
+    header{
+        height: 70px;
+        background-color:antiquewhite;
+        margin-bottom: 2rem;
+    }
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        place-content: center;
+        padding: 0rem 0rem;
+        height: 100vh;
+    }
+    main section{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    figure{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 0;
+    }
+    figure img{
+        margin-top: 5rem;
+        height: 250px;
+        width: 250px;
+    }
+    .details{
+        line-height: 1.5rem;
+        font-size: 1rem;
+        text-align: center;
+        padding-left: 2rem;
+    }
+    .my-details h2{
+        text-align: center;
+        justify-content: center;
+        font-size: 1.7rem;
+    }
+    .profession{
+        display: flex;
+        text-align: center;
+    }
+    .profession .wrap{
+        display: flex;
+        margin-top: -1rem;
+        padding-left: 0.3rem;
+    }
+    .name-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .profession{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .profession span::before{
+        padding-top: 1rem;
+    }   
+    .profession span::after{
+        content: '.';
+        padding-top: 1rem;
+    }
+    .buttons{
+        justify-content: center;
+    }
+}
+
+/* Mobile */
+@media (min-width : 360px) and (max-width : 576px){
+    .nav-name{
+        display: none;
+    }
+    .second-menu summary{
+        display: none;
+    }
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    nav .menu{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4.5rem;
+    }
+    .menu .animation{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 57px;
+        height: 100%;
+        background: orangered;
+        border-radius: 3px;
+        transition: .5s ease;
+    }
+    .menu a:nth-child(1)~span{
+        left: 0px;
+    }
+    .menu a:nth-child(1):hover~span{
+        left: 0px;
+    }
+    .menu a:nth-child(2):hover~span{
+        left: 120px;
+        width: 65px;
+    }
+    .menu a:nth-child(3):hover~span{
+        left: 250px;
+        width: 83px;
+    }
+    .menu a:nth-child(4):hover~span{
+        left: 398px;
+        width: 78px;
+    } 
+    .social-media .social{
+        display: none;
+    }
+    body{
+        margin-right: -8.5rem;
+        padding: 0rem 0rem;
+    }
+    header{
+        height: 50px;
+        background-color: aliceblue;
+    }
+    main{
+        margin-top: 0.9rem;
+        justify-content: center;
+        align-items: center;
+        place-content: center;
+    }
+    main section{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem 0px;
+        padding-bottom: 14rem;
+    }
+    figure{
+        margin-top: -3.5rem;
+        justify-content: center;
+        padding-left: 0rem;
+    }
+    figure img{
+    height: 250px;
+    width: 250px;
+    }
+    .details{
+    line-height: 1.9rem;
+    font-size: 1.3rem;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    }
+    .my-details h2{
+        text-align: center;
+        justify-content: center;
+        font-size: 1.8rem;
+    }
+    .my-details h2{
+        text-align: center;
+        justify-content: center;
+        font-size: 1.7rem;
+    }
+    .profession{
+        display: flex;
+        text-align: center;
+    }
+    .profession .wrap{
+        display: flex;
+        margin-top: -1rem;
+        padding-left: 0.3rem;
+    }
+    .name-div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .profession{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .profession span::before{
+        padding-top: 1rem;
+    }   
+    .profession span::after{
+        content: '.';
+        padding-top: 1rem;
+    }
+    .buttons{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 2rem;
+    }
+}
+
+/* Small Device */
+@media (min-width : 50px) and (max-width : 360px){
+    .social-media .social{
+        display: none;
+    }
+    .nav-name{
+        display: none;
+    }
+    .profession span::before{
+        padding-top: 1rem;
+    }  
+    body{
+        margin-right: -8.5rem;
+        padding: 0rem 0rem;
+    }
+    header{
+        height: 50px;
+        background-color: aliceblue;
+    }
+    main{
+        margin-top: 0.9rem;
+        justify-content: center;
+        align-items: center;
+        place-content: center;
+    }
+    main section{
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 0px;
+    }
+    figure{
+        margin-top: -3.5rem;
+        justify-content: center;
+        padding-left: 0rem;
+    }
+    figure img{
+        height: 250px;
+        width: 250px;
+    }
+    .details{
+        line-height: 1.9rem;
+        font-size: 1.3rem;
+        text-align: center;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .my-details h2,
+    .name-div{
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 1.8rem;
+    }
+    .profession{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .profession .wrap{
+        display: flex;
+        margin-top: -1rem;
+        padding-left: 0.3rem;
+    }
+    .buttons{
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem 2rem;
+    }
+}

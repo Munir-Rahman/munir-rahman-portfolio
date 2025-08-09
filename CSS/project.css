@@ -1,0 +1,469 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: arial;
+    background-color: rgb(245, 240, 234);
+}
+body{
+    height: 100vh;
+    font-size: 1.4rem;
+    padding: 1rem 3rem;
+}
+header{
+    background-color: aliceblue;
+    height: 80px;
+    align-content: center;
+    position: sticky;
+    top: 0;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 2px 1px gray;
+    z-index: 100;
+}
+header nav{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+nav .nav-name{
+    font-weight: bolder;
+}
+nav .nav-name:hover{
+    color: orangered;
+}
+nav .menu{
+    display: flex;
+    gap: 20px;
+    font-size: 1.2rem;
+}
+nav a{
+    position: relative;
+    padding-bottom: 5px;
+}
+nav a,a:visited,
+a:any-link,
+a:target{
+    text-decoration: none;
+    color: #001;
+    font-weight: light;
+    z-index: 1;
+    transition: .3s ease;
+    font-weight: 550;
+}
+nav .social-media{
+    display: flex;
+    justify-content: space-around;
+}
+.social{
+    padding: 0px 3px;
+}
+.fa-linkedin,
+.fa-github,
+.fa-whatsapp,
+.fa-x-twitter{
+    height: 2rem;
+    width: 2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000;
+    border-radius: 50%;
+}
+.fa-linkedin:hover{
+    color: #fff;
+    background-color: rgb(11, 11, 162);
+    transform: scale(1.1);
+}
+.fa-whatsapp:hover{
+    transform: scale(1.1);
+    color: #fff;
+    background-color: green;
+}
+.fa-x-twitter:hover{
+    color: #fff;
+    background-color: #000;
+    transform: scale(1.1);
+}
+.fa-github:hover{
+    color: #fff;
+    background-color: #000;
+    transform: scale(1.1);
+}
+.menu .menu-project{
+    color: #000;
+}
+.menu .link:hover{
+    color: #fff;
+}
+.menu{
+    position: relative;
+}
+.menu .animation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 85px;
+    height: 100%;
+    background: orangered;
+    border-radius: 3px;
+    transition: .5s ease;
+}
+.menu a:nth-child(3)~span{
+    left: 142px;
+}
+.menu a:nth-child(1):hover~span{
+    left: -2px;
+    width: 60px;
+}
+.menu a:nth-child(2):hover~span{
+    left: 70px;
+    width: 65px;
+}
+.menu a:nth-child(3):hover~span{
+    left: 142px;
+    width: 85px;
+}
+.menu a:nth-child(4):hover~span{
+    left: 242px;
+    width: 80px;
+}
+main{
+    margin-top: 1.5rem;
+    padding: 2.5rem 1rem;
+    background-color: aliceblue;
+    border-radius: 1rem;
+}
+main .latest-projects{
+    width: 100%;
+    height: auto;
+    background-color: rgb(231, 240, 247);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+.latest-projects h2 span:hover{
+    color: orangered;
+}
+main .text-button{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    /* column-gap: 42rem; */
+    column-gap: 50%;
+}
+main .down-text{
+    padding-top: 20px;
+}
+main .button-div{
+    height: 40px;
+    width: 140px;
+    border: 1px solid orangered;
+    border-radius: 20px;
+}
+main .sell-all-projects-button{
+    font-size: 0.9rem;
+    width: 138px;
+    height: 38px;
+    border-radius: 20px;
+    color: orangered;
+    border: none;  
+    font-weight: bold;
+    transition: .8s ease; 
+}
+.sell-all-projects-button:hover{
+    background-color: orangered;
+    color: #fff;
+    transform: scale(1.1);
+}
+.project-section{
+    margin-top: 2rem;
+    background-color: rgb(221, 217, 217);
+    border-radius: 30px;
+}
+.Project{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 3rem;
+    padding: 5rem;
+}
+.left-side{
+    padding-top: 15%;
+}
+.second-one-left-side{
+    padding-top: 20%;
+}
+.left-side .text{
+    padding-top: 2rem;
+}
+.second-one-left-side .text{
+    padding-top: 2rem;
+}
+.technology-name{
+    color: rgb(40, 40, 219);
+    font-size: 1.3rem;
+}
+.demo-link span{
+    color: rgb(40, 40, 219);
+    transition: .3s ease;
+}
+.demo-link span:hover{
+    color: orangered;
+}
+.project-name{
+    font-size: 2rem;
+    transition: .5s ease;
+}
+.project-name:hover{
+    color: orangered;
+}
+.project-description{
+    line-height: 2rem;
+}
+figure{
+    padding-top: 5rem;
+}
+figure img{
+    border-radius: 1.5rem;
+    width: 100%;
+}
+/* Portfolio Project */
+.portfolio-projects{
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    column-gap: 1rem;
+}
+.portfolio{
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 50%;
+    background-color: rgb(221, 217, 217);
+}
+.top-side{
+    padding: 1rem;
+    padding-top: 2rem;
+}
+.top-side .text{
+    padding-top: 2rem;
+}
+.down-side figure img{
+    padding-top: 2rem;
+    width: 100%;
+    border-radius: 1rem;
+}
+@keyframes apper{
+    from{
+        opacity: 0;
+        scale: 0.5;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+figure,section,nav{
+    animation: apper 0.9s linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 30%;
+}
+
+/* Let Creat Responsive website*/
+
+/* For Laptop Device */
+@media (min-width : 1200px) {
+    nav {
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+} 
+/* For Laptop Device */
+@media (max-width : 1200px) and (min-width : 1440px){
+    main{
+    margin-top: 1.5rem;
+    padding: 2.5rem 1rem;
+    background-color: aliceblue;
+    border-radius: 1rem;
+    }
+    main .latest-projects{
+    width: 100%;
+    height: auto;
+    background-color: rgb(231, 240, 247);
+    padding: 1rem;
+    border-radius: 1rem;
+    }
+    nav {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+} 
+
+/* Mobile L */
+@media (min-width : 768px) and (max-width : 992px){
+    .social-media,
+    .social-media .social{
+        display: none;
+    }
+    main .text-button{
+    column-gap: 0%;
+    }   
+    .right-side figure{
+        padding-top: 0;
+    }
+    figure img{
+        height: 30rem;
+    }
+    .right-side{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Mobile M */
+@media (min-width : 576px) and (max-width : 768px){
+    main .text-button{
+    column-gap: 0%;
+    }   
+    .right-side figure{
+        padding-top: 0;
+    }
+    figure img{
+        height: 30rem;
+        width: 10rem;
+    }
+    .portfolio-projects{
+    margin-top: 2rem;
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    row-gap: 1rem;
+    }
+    .portfolio{
+        width: 100%;
+    }
+    #projects .Project{
+        padding-left: 25px;
+    }
+}
+
+/* Mobile */
+@media (min-width : 360px) and (max-width : 576px){
+    header nav{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0.5rem
+    }
+    .nav-name{
+        display: none
+    }
+    .social-media .social{
+        display: none
+    }
+    .see-all-project-outer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    body{
+        padding: 10px;
+    }
+    main .text-button{
+        column-gap: 0%;
+    }   
+    .right-side figure{
+        padding-top: 10px;
+    }
+    figure img{
+        height: 30rem;
+        width: 15rem;
+        padding: 0;
+    }
+    figure{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Project{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .portfolio-projects{
+        margin-top: 2rem;
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        row-gap: 1rem;
+    }
+    .portfolio{
+        width: 100%;
+    }
+    #projects .right-side{
+        margin-left: -40px;
+    }
+    .Project .right-side{
+        margin-left: -40px;
+    }
+}
+
+/*Full Small Device*/
+@media (min-width : 50px) and (max-width : 360px){
+    header nav{
+        padding-left: 0.5rem
+    }
+    .nav-name{
+        display: none
+    }
+    .social-media .social{
+        display: none
+    }
+    .see-all-project-outer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    body{
+        padding: 10px;
+    }
+    main .text-button{
+        column-gap: 0%;
+    }   
+    .right-side figure{
+        padding-top: 10px;
+    }
+    figure img{
+        height: 30rem;
+        width: 15rem;
+        padding: 0;
+    }
+    figure{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Project{
+        display: flex;
+        flex-flow: column wrap;
+    }
+    .portfolio-projects{
+        margin-top: 2rem;
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        row-gap: 1rem;
+    }
+    .portfolio{
+        width: 100%;
+    }
+    #projects .right-side{
+        margin-left: -40px;
+    }
+    .Project .right-side{
+        margin-left: -40px;
+    }
+}
